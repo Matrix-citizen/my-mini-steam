@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+$clr-bg: #e5e5e5;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; 
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $clr-bg;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
