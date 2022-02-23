@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Friends</h2>
+  <form>
+    <div class="search-box">
+      <div class="search-box__input">
+        <label for="search-box">Search Friends</label>
+        <input type="text" id="search-box" placeholder="Search Friends" />
+      </div>
+      <div>
+        <button type="button" class="search-box__btn">Search</button>
+      </div>
+    </div>
+  </form>
+
+  <h2>My Friends</h2>
+  <app-friend *ngFor="let user of users" [user]="user"></app-friend>
+</div>

@@ -1,0 +1,61 @@
+$clr-btn: #6c69ff;
+$clr-bg: #fff;
+$clr-err: #ff0000;
+
+.profile-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-wrap {
+  width: 32rem;
+  height: auto;
+  background-color: $clr-bg;
+  box-shadow: 0rem, 0.4rem, 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+
+  form {
+    margin: 6rem;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 3rem;
+      font-weight: 400;
+    }
+
+    label {
+      display: block;
+      font-size: 1.8rem;
+    }
+
+    input {
+      display: block;
+      padding: 0.5rem;
+      width: 100%;
+      margin-bottom: 2rem;
+      border-radius: 0.5rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 1rem;
+      color: $clr-bg;
+      background-color: $clr-btn;
+      border: none;
+      border-radius: 0.5rem;
+      
+      &:hover {
+        background-color: lighten($color: $clr-btn, $amount: 6);
+      }
+    }
+  }  
+}
+
+.error {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  color: $clr-err;
+}

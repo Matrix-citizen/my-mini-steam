@@ -1,0 +1,58 @@
+$clr-bg: #fff;
+$clr-border: #000;
+$clr-btn: #6c69ff;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: $clr-bg;
+  padding: 4rem;
+  margin: 3rem 6rem;
+
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+    
+  .search-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0rem;
+    margin-bottom: 2rem;
+  
+    &__input {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      margin: 0 0.8rem 0 0;
+  
+      input {
+        margin-top: 0.5rem;
+        padding: 0.8rem;
+        border: 0.5px solid $clr-border;
+        box-sizing: border-box;
+        border-radius: 0.4rem;
+      }
+    }
+
+    label {
+      font-size: 1.8rem;
+    }
+  
+    &__btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0.8rem 1.6rem;
+      background: $clr-btn;
+      color: $clr-bg;
+      box-shadow: 0rem 0rem 0.4rem rgba(0, 0, 0, 0.25);
+      border-radius: 0.4rem;
+    }
+  }
+}

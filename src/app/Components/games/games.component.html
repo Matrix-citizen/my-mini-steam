@@ -1,0 +1,31 @@
+<div class="container">
+  <h2>Games</h2>
+  <form>
+    <div class="search-box">
+      <div class="search-box__input">
+        <label for="search-box">Search Games</label>
+        <input
+          type="text"
+          id="search-box"
+          name="search"
+          placeholder="Search Games"
+        />
+      </div>
+      <div>
+        <button 
+          type="button"
+          class="search-box__btn">
+          Search
+        </button>
+      </div>
+    </div>
+  </form>
+
+  <h2>Featured Games</h2>
+  <div class="container2">
+    <app-game-card
+      *ngFor="let game of games"
+      [game]="game"
+    ></app-game-card>
+  </div>
+</div>
